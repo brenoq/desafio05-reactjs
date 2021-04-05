@@ -53,8 +53,6 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element{
       response.json()
     )
 
-    console.log(postsResults)
-
     setNextPage(postsResults.next_page)
     setCurrentPage(postsResults.page)
 
@@ -82,7 +80,7 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element{
       <Head>
         <title>Home | SpaceTraveling</title>
       </Head>
-
+    
       <main className={commonStyles.container}>
         <Header />
 
